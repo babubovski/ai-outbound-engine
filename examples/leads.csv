@@ -1,0 +1,9 @@
+first_name,last_name,email,title,company,domain,industry,linkedin,notes
+Ada,Sample,ada@brightloop.example,VP of Sales,Brightloop Analytics,brightloop.example,B2B SaaS,https://linkedin.example/in/ada-sample,is hiring three SDRs in Austin
+Rafael,Demo,rafael@ledgerly.example,Co-Founder & CEO,Ledgerly,ledgerly.example,Fintech software,https://linkedin.example/in/rafael-demo,just launched a self-serve pricing tier
+Priya,Fixture,priya@stackwise.example,Head of Growth,Stackwise,https://www.stackwise.example/,Developer tools,,is expanding into the DACH market
+Tom,Mockley,tom@cloudcart.example,Director of Demand Generation,Cloudcart,cloudcart.example,E-commerce SaaS,,
+Lena,Example,lena@quotienthr.example,Chief Revenue Officer,Quotient HR,quotienthr.example,"HR software, B2B",https://linkedin.example/in/lena-example,is rolling out an AI interview product
+Marco,Stub,marco@pixelpear.example,Marketing Intern,Pixelpear,pixelpear.example,Consumer apps,,
+Grace,Dummy,grace@fernwood.example,Office Manager,Fernwood Dental,fernwood.example,Healthcare clinics,,
+Omar,Testa,omar@shipyardapi.example,Business Development Manager,Shipyard API,shipyardapi.example,Logistics API platform,,posted a job for its first sales hire

@@ -1,0 +1,45 @@
+# Who we sell to, what we offer, and how the copy should read.
+# Every number here is a scoring weight you can tune. Run `outbound score` to see the effect.
+
+offer:
+  sender_name: Max
+  sender_company: Acme Outbound
+  value_prop: >-
+    We run AI-personalized outbound for B2B SaaS teams and you only pay per qualified meeting held.
+  proof: Past programs have generated $500K+ in qualified B2B pipeline from Apollo lists.
+  cta: Open to a 15 minute call next week to see if it fits?
+
+icp:
+  # Function fit: the best matching keyword in the job title wins.
+  title_keywords:
+    sales: 25
+    revenue: 25
+    growth: 25
+    founder: 20
+    demand generation: 20
+    business development: 20
+    marketing: 15
+  # Seniority: the best matching keyword in the job title wins.
+  seniority:
+    founder: 25
+    co-founder: 25
+    ceo: 25
+    cro: 25
+    chief: 25
+    vp: 20
+    vice president: 20
+    head: 15
+    director: 10
+    manager: 5
+  # Industry fit: searched in industry, company, notes and the fetched homepage.
+  industry_keywords: [saas, b2b, software, platform, api, analytics, fintech, developer tools]
+  industry_points: 10
+  industry_max: 30
+  # Any of these in the title applies the penalty.
+  negative_keywords: [intern, student, assistant, recruiter, talent acquisition]
+  negative_penalty: 40
+  # Leads below this score are written to the CSV but skipped for generation.
+  min_score: 40
+
+generation:
+  max_words: 90
