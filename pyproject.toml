@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-outbound-engine"
+version = "0.1.0"
+description = "Turn a CSV of leads and an ICP config into scored, AI-personalized outbound sequences."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Maximilian Yakubovskiy", email = "yakubovs@usc.edu" }]
+keywords = ["outbound", "sales", "gtm", "cold-email", "anthropic", "claude", "lead-scoring"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: Office/Business",
+]
+dependencies = [
+    "anthropic>=2.0",
+    "typer>=0.12",
+    "rich>=13",
+    "requests>=2.31",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+outbound = "ai_outbound_engine.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_outbound_engine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
